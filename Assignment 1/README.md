@@ -44,18 +44,18 @@ This project implements a distributed chat application with AI model integration
    - Install VirtualBox Extension Pack for additional features
 
 2. **Create Frontend VM (VM1):**
-   - Name: Frontend-VM
+   - Name: Astrik
    - OS: Ubuntu 22.04 LTS
    - RAM: 4GB
    - Storage: 20GB
-   - Network: NAT Network (AAshuG)
+   - Network: NAT Network (AshuG)
 
 3. **Create Backend VM (VM2):**
-   - Name: Backend-VM
+   - Name: Assg1
    - OS: Ubuntu 22.04 LTS
-   - RAM: 4GB
+   - RAM: 2GB
    - Storage: 20GB
-   - Network: NAT Network (AAshuG)
+   - Network: NAT Network (AshuG)
 
 #### 2. Network Configuration
 
@@ -76,7 +76,7 @@ This project implements a distributed chat application with AI model integration
 
 2. **Configure Network Settings:**
 
-   - Set both VMs to use NAT Network "AAshuG"
+   - Set both VMs to use NAT Network "AshuG"
    - Note down IP addresses of both VMs using:  
 
      ```bash
@@ -116,7 +116,7 @@ This project implements a distributed chat application with AI model integration
    echo "PORT=3001" >> .env
 
    # Start the server
-   node server.js
+   npm start server.js
    # OR use nohup for background process
    nohup node server.js > output.log 2>&1 &
    ```
@@ -169,7 +169,7 @@ This project implements a distributed chat application with AI model integration
 
 ```mermaid
 flowchart LR
-    subgraph NAT[NAT Network - AAshuG]
+    subgraph NAT[NAT Network - AshuG]
         subgraph VM1[Frontend VM]
             A[React Frontend]
         end
@@ -192,7 +192,7 @@ flowchart LR
 
 ### Components Description
 
-1. **NAT Network (AAshuG)**
+1. **NAT Network (AshuG)**
    - Isolated network for VM communication
    - Provides internet access for VMs
    - Enables secure internal communication
@@ -215,7 +215,7 @@ flowchart LR
 
 ## Source Code Repository
 
-The complete source code is available at: [GitHub Repository Link]
+The complete source code is available at: [GitHub Repository Link](https://github.com/Ashutosh0212/VCC-IITJ/tree/main/Assignment%201)
 
 ### Repository Structure
 
